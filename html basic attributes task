@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Black goose bistro</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        body{
+            background-color: aqua;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container{
+            width: 90%;
+            margin: 50px auto;
+            border: 2px solid gray;
+            padding: 10px;
+        }
+        h1{
+            background-color: blue;
+            padding: 5px;
+            font-size: 28px; 
+        }
+        h2{
+            background-color:white;
+            font-size: 20px;
+            padding: 5px;
+        }
+        p{
+            background-color: brown;
+            padding: 10px;
+            font-size:16px;
+            line-height: 1.4;
+        }
+        a{
+            color: azure;
+        }
+    </style>
+
+<body>
+
+
+    <div class="container">
+        <h1>BLACK GOOSE BISTRO</h1>
+        <h2>The restrant</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et suscipit quas voluptas perspiciatis pariatur. Commodi, praesentium aut, dolor quas reprehenderit accusamus magni repudiandae ex dolores at minus eum incidunt enim
+        </p>
+        <h2>Catering</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quis debitis quae iure, expedita aut labore nobis voluptatem maiores repudiandae.
+        </p>
+        <h2>location and hours</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quos distinctio vitae. Aliquam, laudantium quod!
+        </p>
+    </div>
+
+</body>
+</html>
