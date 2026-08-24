@@ -1,0 +1,108 @@
+task 2
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",intial-scale=1.0>
+    <title>ACTOR AJITH</title>
+    <link rel="icon" href="./ajithimage/images.jpg">
+    <body>
+        <header>
+            <nav>
+                <a href="">home</a>
+                <a href="">about</a>
+                <a href="">sales</a>
+                <a href="">product</a>
+                <a href="">contact</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <header id="a">
+                    <h2>learning html</h2>
+                    <p>published in 1993 by author<span style="color: red;background-color: yellow;font-weight: bolder;">TIM BERNER'S LEE</span>
+                    </p>
+                </header>
+            </article>
+            <div class="a">
+            <img src="./ajithimage/images.jpg" alt=""title="JOSESH VIJAY"><br><br>
+        </main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odit vel, voluptates tempora id atque accusantium placeat nobis commodi culpa earum beatae asperiores ea hic quas veritatis, voluptatum velit laborum dolore, qui sequi quisquam labore. Expedita perferendis recusandae, consequatur, nulla consequuntur velit quidem tempora facilis error fugit ipsam! Iure delectus quasi architecto illo recusandae culpa, laudantium inventore, numquam tempora sunt officia cum magni quia laborum ab labore natus consectetur tenetur commodi odit! Facere maiores molestiae blanditiis. Dolorum aspernatur neque quia incidunt voluptates nobis non iusto eligendi, eum doloremque dolor eveniet rem rerum, quod voluptatum sapiente perferendis earum ex distinctio debitis?</p>
+    </body>
+</head>
+
+task 3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>ACTOR VIJAY</title>
+    <link rel="icon" href="./vijayimage/images.jpg">
+    <style>
+        body{
+            background-image: url("vijayimage/images.jpg");
+            background-repeat: no-repeat;
+            background-size: bottom;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        nav{
+            text-align: center; 
+            background-color: aqua;
+            padding: 5px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+        #a{
+            text-align: center;
+        }
+        .a{
+            text-align: center;
+        }
+        #b{
+            background-color: aqua;
+        }
+        .b{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        .b1{
+            color: crimson;
+        }
+        #c{
+            text-align: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: lightgray;
+        }
+   </style>
+</head>
+<body><header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">ABOUT</a>
+        <a href="">sales</a>
+        <a href="">product</a>
+        <a href="">contact</a>
+    </nav>
+</header>
+<main>
+    <article>
+        <header id="a">
+            <h2>learning HTML</h2>
+            <P>published in 1993 by author <span style="color: red;background-color: yellow;font-weight: bolder
+            ;"TIM BERNERS LEE</span></P>
+        </header>
+    </article>
+    <div class="a">
+        <img src="./image/vij.jpg" alt=""title="josesh vijay"><br><br>
+    <p> ipsum dolor sit amet, consectetur adipisicing elit</strong>.<em> Modi rem veniam ipsa optio voluptatibus laudantium reiciendis</em>,<mark style="background-color: white;" eum quasi placeat culpa nobis eos</mark>, ducimus impedit dolor facilis unde! Nulla, nisi neque.
+        </p>
+    </div>
+</main>
+</body>
