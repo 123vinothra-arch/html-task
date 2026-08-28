@@ -1,0 +1,353 @@
+task 1
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Feedback Form</title>
+</head>
+
+<body>
+
+    <h2>My Feedback Form</h2>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text" name="name">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password">
+        <br><br>
+
+        <p>Please check all the emotions that apply to you:</p>
+
+        <input type="checkbox" name="emotion" value="angry">
+        <label>Angry</label>
+        <br>
+
+        <input type="checkbox" name="emotion" value="sad">
+        <label>Sad</label>
+        <br>
+
+        <input type="checkbox" name="emotion" value="happy">
+        <label>Happy</label>
+        <br>
+
+        <input type="checkbox" name="emotion" value="ambivalent">
+        <label>Ambivalent</label>
+        <br><br>
+
+        <p>How satisfied were you with our service?</p>
+
+        <input type="radio" name="satisfaction" value="very satisfied">
+        <label>Very satisfied</label>
+        <br>
+
+        <input type="radio" name="satisfaction" value="satisfied">
+        <label>Satisfied</label>
+        <br>
+
+        <input type="radio" name="satisfaction" value="didn't care">
+        <label>Didn't care</label>
+        <br>
+
+        <input type="radio" name="satisfaction" value="dissatisfied">
+        <label>Dissatisfied</label>
+        <br>
+
+        <input type="radio" name="satisfaction" value="very dissatisfied">
+        <label>Very dissatisfied</label>
+        <br><br>
+
+        <label>Further comments:</label>
+        <br>
+        <textarea rows="5" cols="40"></textarea>
+        <br><br>
+
+        <label>Bio photo:</label>
+        <input type="file" name="photo">
+        <br><br>
+
+        <label>Location visited:</label>
+
+        <select name="location">
+            <option value="">Select location</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Salem">Salem</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Bangalore">Bangalore</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
+task2
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <h1>Survey Form</h1>
+
+    <p>Let us know how we can improve freeCodeCamp</p>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your Email">
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" placeholder="Age">
+        <br><br>
+
+        <label>Which option best describes your current role?</label>
+        <br>
+        <select>
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Developer</option>
+            <option>Other</option>
+        </select>
+
+        <br><br>
+
+        <p>How likely is that you would recommend freeCodeCamp to a friend?</p>
+
+        <input type="radio" name="recommend"> Definitely
+        <br>
+        <input type="radio" name="recommend"> Maybe
+        <br>
+        <input type="radio" name="recommend"> Not sure
+
+        <br><br>
+
+        <label>What do you like most in FCC:</label>
+        <br>
+        <select>
+            <option>Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+        </select>
+
+        <br><br>
+
+        <p>Things that should be improved in the future (Check all that apply):</p>
+
+        <input type="checkbox"> Front-end Projects
+        <br>
+
+        <input type="checkbox"> Back-end Projects
+        <br>
+
+        <input type="checkbox"> Data Visualization
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
+task 3
+!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registration Form</h2>
+
+    <form>
+        <label>First Name:</label>
+        <input type="text" placeholder="Enter your first name">
+
+        <label>Last Name:</label>
+        <input type="text" placeholder="Enter your last name">
+
+        <label>Nick Name:</label>
+        <input type="text" placeholder="Enter your nick name">
+
+        <label>E-mail:</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter your password">
+
+        <label>Date of Birth:</label>
+        <input type="date">
+
+        <label>Gender:</label>
+        <div class="options">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Others
+        </div>
+
+        <label>Mobile:</label>
+        <input type="tel" placeholder="Enter your mobile number">
+
+        <label>Address:</label>
+        <textarea placeholder="Enter your address"></textarea>
+
+        <label>Eye Color:</label>
+        <select>
+            <option>Select</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>Brown</option>
+            <option>Black</option>
+        </select>
+
+        <label>Check all that apply:</label>
+        <div class="checkbox">
+            <input type="checkbox"> Over 6 feet tall<br>
+            <input type="checkbox"> Over 200 pounds
+        </div>
+
+        <label>Describe your athletic ability:</label>
+        <textarea placeholder="Enter your information"></textarea>
+
+        <button type="submit">Enter My Information</button>
+    </form>
+</div>
+
+</body>
+</html>
+task 4
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Form Design</title>
+</head>
+
+<body>
+
+    <h2>Personal Details</h2>
+
+    <form>
+
+        <label>First name:</label>
+        <input type="text" name="firstname">
+        <br><br>
+
+        <label>Last name:</label>
+        <input type="text" name="lastname">
+        <br><br>
+
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" value="male">
+        <label>Male</label>
+
+        <input type="radio" name="gender" value="female">
+        <label>Female</label>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br><br>
+
+        <label>Address:</label>
+        <br>
+        <textarea name="address" rows="5" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
