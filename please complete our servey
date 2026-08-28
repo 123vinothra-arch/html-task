@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <h2>Please Complete Our Survey</h2>
+
+    <form>
+
+        <h3>Contact Information</h3>
+
+        <label>Email address:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label>First name:</label>
+        <input type="text" name="firstname" required>
+        <br><br>
+
+        <label>Last name:</label>
+        <input type="text" name="lastname" required>
+        <br><br>
+
+        <h3>Geographic Information</h3>
+
+        <label>State:</label>
+        <input type="text" name="state" maxlength="2" size="5" required>
+        <br><br>
+
+        <label>Zip code:</label>
+        <input type="text" name="zipcode"
+               maxlength="5"
+               pattern="[0-9]{5}"
+               size="5"
+               required>
+        <br><br>
+
+        <h3>How did you hear about us?</h3>
+
+        <input type="checkbox" name="source" value="Web Search">
+        <label>Web Search</label>
+        <br>
+
+        <input type="checkbox" name="source" value="Facebook">
+        <label>Facebook</label>
+        <br>
+
+        <input type="checkbox" name="source" value="Twitter">
+        <label>Twitter</label>
+        <br>
+
+        <input type="checkbox" name="source" value="Email message">
+        <label>Email message</label>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <h3>Thank you for taking our survey!</h3>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
