@@ -1,0 +1,80 @@
+HTML PROGRAM
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Bio Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="biodata">
+        <h1>MY BIO DATA</h1>
+
+        <p><b>Name:</b> Vinoth Kumar.C</p>
+        <p><b>Qualification:</b> B.E Mechanical Engineering</p>
+        <p><b>Skills:</b> Python, HTML, CSS,javascript,SQL</p>
+        <p><b>Career:</b> Python Full Stack Developer</p>
+        <p><b>Hobbies:</b> Reading, Learning New Technologies</p>
+        <p><b>Email:</b>123vinothra@gmail.com</p>
+        <p><b>Mobile no:</b>9080002321</p>
+
+    </div>
+
+</body>
+</html>
+
+CSS PROGRAM
+
+body {
+    background-color: black;
+    font-family: Arial;
+}
+
+.biodata {
+    width: 500px;
+    margin: 100px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    
+    animation-name: biodataAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+h1 {
+    text-align: center;
+}
+
+@keyframes biodataAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
