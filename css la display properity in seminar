@@ -1,0 +1,106 @@
+HTML PROGRAM
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Display Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Display Property</h1>
+
+    <div class="block">Block Element</div>
+
+    <span class="inline">Inline </span>
+   
+
+    <div class="inline-block">Inline Block</div>
+
+    <div class="flex-container">
+        <div> Flex </div>
+       
+    </div>
+
+    <div class="grid-container">
+        <div> Grid </div>
+        
+    </div>
+    <br>
+
+    <div class="none">This text is hidden</div>
+
+</body>
+
+CSS PROGRAM
+body {
+    font-family: Arial;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 30px;
+}
+.block {
+    display: block;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+}
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    padding: 1px;
+}
+.inline-block {
+    display: inline-block;
+    background-color: orange;
+    width: 200px;
+    height: 50px;
+    padding: 15px;
+    margin: 20px;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    background-color: pink;
+    padding: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(0, 100px);
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    background-color: blue;
+    padding: 10px;
+}
+.none {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
