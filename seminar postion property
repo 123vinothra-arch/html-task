@@ -1,0 +1,79 @@
+HTML PROGRAM
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Position Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Position Property</h1>
+
+    <div class="static">Static</div>
+
+    <div class="relative">Relative</div>
+
+    <div class="parent">
+        <div class="absolute">Absolute</div>
+    </div>
+
+    <div class="fixed">Fixed</div>
+
+    <div class="sticky">Sticky</div>
+
+</body>
+</html>
+CSS PROGRAM
+.relative {
+    position: relative;
+    left: 100px;
+    background: lightgreen;
+    padding: 20px;
+}
+.parent {
+    position: relative;
+    height: 150px;
+    background: lightgray;
+}
+.absolute {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background: pink;
+    padding: 20px;
+}
+.fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: orange;
+    padding: 20px;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    background: yellow;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
