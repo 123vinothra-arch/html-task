@@ -1,0 +1,87 @@
+HTML PROGRAM
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Display Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Display Property</h1>
+
+    <div class="block">1. Block</div>
+
+    <span class="inline">2. Inline</span>
+
+    <div class="inline-block">3. Inline-Block</div>
+
+    <div class="flex">
+        <div>4. Flex - Box 1</div>
+        <div>Flex - Box 2</div>
+        <div>Flex - Box 3</div>
+    </div>
+
+    <div class="none">5. None</div>
+
+</body>
+</html>
+CSS PROGRAM
+.block {
+    display: block;
+    background-color: pink;
+    padding: 25px;
+    margin: 25px;
+   
+}   
+.inline {
+    display: inline;
+    background-color: lightblue;
+    padding: 1px;
+    margin: 25px;
+}
+.inline-block {
+    display: inline-block;
+    background-color: lightgreen;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+.flex {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+  
+}
+.flex div {
+    background-color: orange;
+    padding: 20px;
+}
+.none {
+    display: none;
+    background-color: red;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
