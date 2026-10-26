@@ -1,0 +1,496 @@
+HTML PROGRAM
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gym Reservation Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">FITZONE GYM</a>
+        <a href="#reservation" class="btn btn-danger">Book Now</a>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Welcome to FitZone Gym</h1>
+        <p>Build Your Body, Build Your Confidence</p>
+        <a href="#services" class="btn btn-danger">
+            Explore Services
+        </a>
+    </div>
+</section>
+
+<!-- Gym Services: Five Images -->
+<section id="services" class="container py-5">
+    <h2 class="text-center mb-4">Our Gym Services</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="gym-card">
+                <img src="images/Downloads/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"
+                     alt="Gym equipment">
+                <h4>Gym Training</h4>
+                <p>Train with modern equipment.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="gym-card">
+                <img src="images/anastase-maragos-FP7cfYPPUKM-unsplash.jpg"
+                     alt="Weight training">
+                <h4>Weight Training</h4>
+                <p>Build strength and muscles.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="gym-card">
+                <img src="images/Downloads/jonathan-borba-lrQPTQs7nQQ-unsplash.jpg"
+                     alt="Personal trainer">
+                <h4>Personal Training</h4>
+                <p>Get guidance from a trainer.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="gym-card">
+                <img src="images/Downloads/andrew-tanglao-3I2vzcmEpLU-unsplash.jpg"
+                     alt="Cardio exercise">
+                <h4>Cardio Workout</h4>
+                <p>Improve fitness and stamina.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="gym-card">
+                <img src="images/Downloads/bruce-mars-gJtDg6WfMlQ-unsplash.jpg"
+                     alt="Stretching exercise">
+                <h4>Fitness &amp; Stretching</h4>
+                <p>Stay active and healthy.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Reservation Section -->
+<section id="reservation" class="reservation-section py-5">
+    <div class="container">
+        <div class="reservation-box">
+
+            <h2 class="text-center mb-4">Gym Reservation</h2>
+
+            <form id="reservationForm">
+
+                <label for="name">Full Name</label>
+                <input id="name" type="text"
+                       class="form-control mb-3"
+                       placeholder="Enter your name"
+                       required minlength="2">
+
+                <label for="email">Email</label>
+                <input id="email" type="email"
+                       class="form-control mb-3"
+                       placeholder="Enter your email"
+                       required>
+
+                <label for="phone">Mobile Number</label>
+                <input id="phone" type="tel"
+                       class="form-control mb-3"
+                       placeholder="Enter 10 digit mobile number"
+                       pattern="[6-9][0-9]{9}"
+                       maxlength="10" required>
+
+                <label for="service">Select Service</label>
+                <select id="service" class="form-select mb-3" required>
+                    <option value="">Choose service</option>
+                    <option>Gym Training</option>
+                    <option>Weight Training</option>
+                    <option>Personal Training</option>
+                    <option>Cardio Workout</option>
+                    <option>Fitness & Stretching</option>
+                </select>
+
+                <label for="date">Reservation Date</label>
+                <input id="date" type="date"
+                       class="form-control mb-3" required>
+
+                <label for="time">Select Time</label>
+                <select id="time" class="form-select mb-3" required>
+                    <option value="">Choose time</option>
+                    <option>6:00 AM</option>
+                    <option>8:00 AM</option>
+                    <option>5:00 PM</option>
+                    <option>7:00 PM</option>
+                </select>
+
+                <button type="submit" class="btn btn-danger w-100" onclick="bookGym()">
+                    Register Now
+                </button>
+
+            </form>
+
+            <!-- JavaScript Message -->
+            <div id="message" class="mt-4" aria-live="polite"></div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+    <p>© 2026 FitZone Gym | Stay Fit, Stay Strong!</p>
+</footer>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Our JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
+CSS PROGRAM
+
+/* 1. Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #212529;
+}
+
+/* 2. Position Property */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #ff4757;
+    font-weight: bold;
+}
+
+/* 3. Hero Section */
+.hero {
+    min-height: 400px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("images/Downloads/danielle-cerullo-CQfNt66ttZM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    animation: slideIn 1.5s ease;
+}
+
+.hero h1 {
+    font-size: 40px;
+    text-shadow: 3px 3px 5px black;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 4. Gym Cards */
+.gym-card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+
+    position: relative;
+    height: 100%;
+}
+
+.gym-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease;
+}
+
+.gym-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+.gym-card img:hover {
+    transform: scale(1.05);
+}
+
+.gym-card h4 {
+    color: #ff4757;
+}
+
+/* Button Hover */
+.btn-danger {
+    background-color: #ff4757;
+    border-color: #ff4757;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #e63748;
+    border-color: #e63748;
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(255,71,87,0.5);
+}
+
+/* 5. Reservation Form */
+.reservation-section {
+    background-color: #212529;
+}
+
+.reservation-box {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    display: block;
+    position: relative;
+}
+
+.reservation-box input:focus,
+.reservation-box select:focus {
+    border-color: #ff4757;
+    box-shadow: inset 0 0 5px rgba(255,71,87,0.3);
+}
+
+.reservation-box h2 {
+    color: #ff4757;
+    text-shadow: 1px 1px 2px #aaaaaa;
+}
+
+.reservation-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 6. Responsive Design */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .gym-card img {
+        height: 200px;
+    }
+
+    .reservation-box {
+        padding: 20px;
+    }
+}
+
+JAVASCRIPT PROGRAM
+
+const form = document.getElementById("reservationForm");
+const message = document.getElementById("message");
+const dateInput = document.getElementById("date");
+
+// Today's date
+function getToday() {
+    const today = new Date();
+
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, "0");
+    const day = String(today.getDate()).padStart(2, "0");
+
+    return `${year}-${month}-${day}`;
+}
+
+// Prevent past date selection
+dateInput.min = getToday();
+
+// Read saved reservations
+function getBookings() {
+    try {
+        return JSON.parse(
+            localStorage.getItem("fitZoneBookings") || "[]"
+        );
+    } catch (error) {
+        return [];
+    }
+}
+
+// Display success or error message
+function showMessage(text, type) {
+    message.className = `alert alert-${type} mt-4`;
+    message.textContent = text;
+}
+
+// Form submit event
+form.addEventListener("submit", function (event) {
+
+    // Prevent page refresh
+    event.preventDefault();
+
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("service").value;
+    const date = dateInput.value;
+    const time = document.getElementById("time").value;
+
+    // Validate name
+    if (name.length < 2) {
+        showMessage("Please enter your full name.", "danger");
+        return;
+    }
+
+    // Validate mobile number
+    if (!/^[6-9][0-9]{9}$/.test(phone)) {
+        showMessage(
+            "Please enter a valid 10-digit mobile number.",
+            "danger"
+        );
+        return;
+    }
+
+    // Validate date
+    if (!date || date < getToday()) {
+        showMessage(
+            "Please select today or a future date.",
+            "danger"
+        );
+        return;
+    }
+
+    // Read existing reservations
+    const bookings = getBookings();
+
+    // Check duplicate date and time
+    const alreadyBooked = bookings.some(function (booking) {
+        return booking.date === date && booking.time === time;
+    });
+
+    if (alreadyBooked) {
+        showMessage(
+            "This time slot is already booked in this browser. Choose another time.",
+            "danger"
+        );
+        return;
+    }
+
+    // Create reservation object
+    const booking = {
+        bookingId: "FIT" + Date.now(),
+        name: name,
+        email: email,
+        phone: phone,
+        service: service,
+        date: date,
+        time: time
+    };
+
+    // Save reservation
+    try {
+        bookings.push(booking);
+
+        localStorage.setItem(
+            "fitZoneBookings",
+            JSON.stringify(bookings)
+        );
+    } catch (error) {
+        showMessage(
+            "Unable to save booking. Please check browser storage.",
+            "danger"
+        );
+        return;
+    }
+
+    // Show confirmation
+    showMessage(
+        `Reservation Successful! Welcome ${name}. ` +
+        `Service: ${service}. Date: ${date}. Time: ${time}. ` +
+        `Booking ID: ${booking.bookingId}`,
+        "success"
+    );
+
+    // Clear form
+    form.reset();
+
+    // Keep past dates disabled
+    dateInput.min = getToday();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
